@@ -5,6 +5,7 @@
  */
 package usingevents;
 
+import com.sun.java.accessibility.util.AWTEventMonitor;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -122,6 +123,52 @@ public class Calculator extends JFrame{
                 }
             });
         }
+        //------------------------------clear----------------------------
+        clear.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                display.setText(" ");
+            }
+        });
+        //----------------------------+-------------------------------------
+        operators[1].addActionListener();
+        
+        //--------------------------------------------------------------------
+        operators[2].addActionListener();
+        //------------------------*---------------------------------------
+        operators[3].addActionListener();
+        //-----------------------=-----------------------------------------
+        operators[0].addActionListener();
+        //-------------------/---------------------------------------------
+        operators[4].addActionListener();
+        //----------------------------------------------------------------
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     //--------------------------------------------------------------------------
     public static void main(String[] args) 
